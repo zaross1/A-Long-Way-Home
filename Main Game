@@ -1,0 +1,2125 @@
+import random
+import simplegui
+import math
+
+class Item_head(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+        self.name = name
+        self.kind = kind
+        self.max_hp = int(max_hp)
+        self.max_mana = int(max_mana)
+        self.strength = int(strength)
+        self.agility = int(agility)
+        self.dexterity = int(dexterity)
+        self.intelligence = int(intelligence)
+        self.armor = int(armor)
+
+class Item_bracelet(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+                self.name = name
+                self.kind = kind
+                self.max_hp = int(max_hp)
+                self.max_mana = int(max_mana)
+                self.strength = int(strength)
+                self.agility = int(agility)
+                self.dexterity = int(dexterity)
+                self.intelligence = int(intelligence)
+                self.armor = int(armor)
+
+class Item_chest(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+                self.name = name
+                self.kind = kind
+                self.max_hp = int(max_hp)
+                self.max_mana = int(max_mana)
+                self.strength = int(strength)
+                self.agility = int(agility)
+                self.dexterity = int(dexterity)
+                self.intelligence = int(intelligence)
+                self.armor = int(armor)
+
+class Item_boots(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+class Item_legs(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+class Item_arms(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+class Item_weapon(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor, physical_attack, magical_attack, attack_speed):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+            self.physical_attack = int(physical_attack)
+            self.magical_attack = int(magical_attack)
+            self.attack_speed = int(attack_speed)
+
+class Item_shoulders(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+class Item_earring(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+class Item_ring(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+class Item_shield(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+class Item_necklace(object):
+
+    def __init__(self, kind, name, max_hp, max_mana, strength, agility, dexterity,
+     intelligence, armor):
+            self.name = name
+            self.kind = kind
+            self.max_hp = int(max_hp)
+            self.max_mana = int(max_mana)
+            self.strength = int(strength)
+            self.agility = int(agility)
+            self.dexterity = int(dexterity)
+            self.intelligence = int(intelligence)
+            self.armor = int(armor)
+
+
+class Player(object):
+    def __init__(self, name, level, class_type, agility, strength, dexterity, intelligence, basic_armor,
+                  item_armor, gold, class_physical_attack_bonus,
+                 class_magical_attack_bonus, weapon_attack_speed, strength_item, dexterity_item, intelligence_item, agility_item, shield_armor, magic_weapon_damage, ability_bonus, physical_weapon_damage):
+                 self.name = name
+                 self.level = int(level)
+                 self.class_type = class_type
+                 self.agility = int(agility)
+                 self.agility_item = int(agility_item)
+                 self.strength = int(strength)
+                 self.strength_item = int(strength_item)
+                 self.dexterity = int(dexterity)
+                 self.dexterity_item = int(dexterity_item)
+                 self.intelligence = int(intelligence)
+                 self.intelligence_item = int(intelligence_item)
+                 self.item_armor = int(item_armor)
+                 self.gold = int(gold)
+                 self.shield_armor = int(shield_armor)
+                 self.magic_weapon_damage = int(magic_weapon_damage)
+                 self.ability_bonus = int(ability_bonus)
+                 self.physical_weapon_damage = int(physical_weapon_damage)
+
+
+
+
+
+                 self.class_physical_attack_bonus = int(class_physical_attack_bonus)
+                 self.class_magical_attack_bonus = int(class_magical_attack_bonus)
+                 self.weapon_attack_speed = int(weapon_attack_speed)
+
+                 self.agility_total = self.agility + self.agility_item
+                 self.strength_total = self.strength + self.strength_item
+                 self.intelligence_total = self.intelligence + self.intelligence_item
+                 self.dexterity_total = self.dexterity + self.dexterity_item
+
+                 self.level_armor = 5 * self.level
+                 self.defense = int(((1/ 6.0) * self.shield_armor) + (1 / 8.0) * self.level_armor + (1 / 10.0) * self.item_armor + (1/12.0) * self.strength_total + (1 / 14.0) * self.dexterity_total * ((1 / 16.0) * self.agility_total))
+                 self.attack = self.class_physical_attack_bonus + ((1/2.0) * self.strength_total)
+                 self.magical_attack = self.magic_weapon_damage + self.class_magical_attack_bonus + int((1.0 / 2) * self.intelligence_total)
+                 # this along with other variables determines magical damage.
+                 self.physical_attack = self.physical_weapon_damage + self.class_physical_attack_bonus + int((1.0 / 2) * self.strength_total)  # each class has class physical / magical bonus. this sets physical bonus.
+                 self.offensive_critical_chance = int((1 / 4.0) * self.dexterity) # initial chance to crit with attack
+                 self.defensive_critical_chance = int((1 / 6.0) * self.dexterity) # this stat relative to opponents crit chance determines their overall crit chance
+                 self.offensive_miss_chance = int((25) -  (1 / 5.0 * self.agility)) # initial chance to miss with a physical attack
+                 self.defensive_miss_chance = int((1 / 4.0) * agility)
+                 self.max_hp = (self.level * 100) + (5 * self.strength)
+                 self.max_mana = (self.level * 50) + (5 * self.intelligence)
+                 self.current_hp = self.max_hp
+                 self.current_mana = self.max_mana
+                 self.experience_to_level = 200 + (2 ** 3 * self.level)
+
+class Equipment(object):
+          def __init__(self, equipped_weapon, equipped_arms, equipped_shield, equipped_head, equipped_legs, equipped_necklace, equipped_ring1, equipped_ring2, equipped_earring1, equipped_earring2, equipped_wristband1, equipped_chest, equipped_shoulders, equipped_wristband2):
+
+                self.equipped_weapon = equipped_weapon
+                self.equipped_shield = equipped_shield
+                self.equipped_head = equipped_head
+                self.equipped_shoulders = equipped_shoulders
+                self.equipped_arms = equipped_arms
+                self.equipped_earring1 = equipped_earring1
+                self.equipped_earring2 = equipped_earring2
+                self.equipped_ring1 = equipped_ring1
+                self.equipped_ring2 = equipped_ring2
+                self.equipped_wristband1 = equipped_wristband1
+                self.equipped_wristband2 = equipped_wristband2
+                self.equipped_chest = equipped_chest
+                self.equipped_legs = equipped_legs
+                self.equipped_necklace = equipped_necklace
+
+class Monster(object):
+    def __init__(self, name, level, class_type, agility, strength, dexterity, intelligence,
+                  item_armor, gold, loot, class_physical_attack_bonus,
+                 class_magical_attack_bonus, attack_speed, ability_bonus):
+                 self.name = name
+                 self.level = level
+                 self.class_type = class_type
+                 self.agility = int(agility)
+                 self.strength = int(strength)
+                 self.dexterity = int(dexterity)
+                 self.intelligence = int(intelligence)
+                 self.item_armor = int(item_armor)
+                 self.ability_bonus = int(ability_bonus)
+                 self.gold = int(gold)
+                 self.loot = loot
+                 self.class_physical_attack_bonus = int(class_physical_attack_bonus)
+                 self.class_magical_attack_bonus = int(class_magical_attack_bonus)
+                 self.attack_speed = int(attack_speed)
+                 self.level_armor = 5 * self.level
+                 self.defense = int((1 / 8.0) * self.item_armor + (1 / 4.0) * self.level_armor + ((1 / 14.0) * self.agility) + ((1 / 16.0) * self.dexterity))
+                 self.attack = int(round(self.class_physical_attack_bonus + (1/2) * self.strength))
+                 self.magical_attack = int(round(class_magical_attack_bonus + ability_bonus + (1 / 2) * self.intelligence))
+                 self.offensive_critical_chance = int(round((1 / 8) * self.dexterity))
+                 self.defense_critical = int(round((1 / 8) * self.dexterity))
+                 self.offensive_miss_chance = int(round((1 / 8) * self.agility))
+                 self.magical_attack = self.class_magical_attack_bonus + self.ability_bonus + int(round((1 / 2) * self.intelligence))
+                 self.offensive_critical_chance = offensive_critical_chance = int((1 / 4.0) * dexterity) # initial chance to crit with attack
+                 self.defensive_critical_chance = int((1 / 6.0) * self.dexterity) # this stat relative to opponents crit chance determines their overall crit chance
+                 self.offensive_miss_chance = int((25) -  (1 / 5.0 * self.agility)) # initial chance to miss with a physical attack
+                 self.defensive_miss_chance = int((1 / 4.0) * self.agility)
+                 self.max_hp = (self.level * 100) + (5 * self.strength)
+                 self.max_mana = (self.level * 50) + (5 * self.intelligence)
+                 self.current_hp = int(self.max_hp)
+                 self.current_mana = int(self.max_mana)
+                 self.experience = 10 * self.level
+
+
+
+game_in_progress = 0
+combat_on = 0
+battle_enemy_one_timer_counter = 0
+battle_player_one_timer_counter = 0
+regen_timer_toggle = 0
+enemy_one_interval_attack = 5000
+enemy_one_regen_interval = 5000
+player_one_interval_attack = 5000
+player_one_regen_interval = 5000
+show_equipped = 0
+activate_enemy_one_attack = 0
+activate_player_one_attack = 0
+activate_enemy_one_miss = 0
+activate_player_one_miss = 0
+activate_player_one_dodge = 0
+activate_enemy_one_dodge = 0
+combat_round = 0
+monster_created = 0
+combat_over = 0
+attack_now = 0
+prologue = 0
+no_player_status = 0
+player_created = 0
+text_one = " "
+text_two = " "
+text_three = " "
+text_four = " "
+text_five = " "
+text_six = " "
+text_seven = " "
+text_eight = " "
+text_nine = " "
+text_ten = " "
+right_text_one = " "
+right_text_two = " "
+right_text_three = " "
+right_text_four = " "
+right_text_five = " "
+right_text_six = " "
+right_text_seven = " "
+right_text_eight = " "
+right_text_nine = " "
+right_text_ten = " "
+right_text_eleven = " "
+right_text_twelve = " "
+right_text_thirteen = " "
+player_dead = 0
+inventory = 0
+attribute = 0
+health_potion = 10
+mana_potion = 10
+
+
+
+
+def new_game():
+    global right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, right_text_thirteen, text_one, text_two, text_three, text_four, text_five, text_six, text_seven, text_eight, text_nine, text_ten, prologue, player_created, hp_status_player_one, name_status_player_one, name_status_enemy_one, hp_status_enemy_one, mana_status_player_one, mana_status_enemy_one, class_status_player_one, class_status_enemy_one, level_status_player_one, level_status_enemy_one, player_one, inventory_player_one, combat_on, equipment_player_one, starting_items, game_in_progress
+    player_one = Player("Vord", 1, "warrior", 20, 20, 20, 20, 15, 15, 200, 10, 0, 5, 1, 1, 1, 1, 1, 0, 0, 5)
+    inventory_player_one = []
+    player_created = 1
+    starting_items = ["rusty_dagger", "rawhide sleeves", "empty", "rawhide hood", "rawhide leggings", "copper necklace", "bent copper ring", "foil ring", "bent copper earring", "fish hook", "rawhide wristband", "rawhide tunic", "rawhide shoulders", "rawhide wristband"]
+    equipment_player_one = Equipment(starting_items[0], starting_items[1], starting_items[2], starting_items[3], starting_items[4], starting_items[5], starting_items[6], starting_items[7], starting_items[8], starting_items[9], starting_items[10], starting_items[11], starting_items[12], starting_items[13])
+    game_in_progress = 1
+    combat_on = 0
+    combat_over = 0
+    prologue = 1
+    def enemy_one_hit_text():
+        global enemy_one, player_one, total_damage
+        return (enemy_one.name) + " hits " + str(player_one.name) + " for " + str(total_damage)
+    def name_status_player_one():
+        if no_player_status == 0:
+            return str(player_one.name)
+        else:
+            return " "
+    def hp_status_player_one():
+        if no_player_status == 0:
+            return "Health: " + str(player_one.current_hp) + " / " + str(player_one.max_hp)
+        else:
+            return " "
+    def mana_status_player_one():
+        if no_player_status == 0:
+            return "Mana: " + str(player_one.current_mana) + " / " + str(player_one.max_mana)
+        else:
+            return " "
+    def class_status_player_one():
+        if no_player_status == 0:
+            return "Class: " + str(player_one.class_type)
+        else:
+            return " "
+    def level_status_player_one():
+        if no_player_status == 0:
+            return "Level:" + str(player_one.level)
+        else:
+            return " "
+    text_one = " "
+    text_two = " "
+    text_three = " "
+    text_four = " "
+    text_five = " "
+    text_six = " "
+    text_seven = " "
+    text_eight = " "
+    text_nine = " "
+    text_ten = " "
+
+    right_text_one = ""
+    right_text_two = " "
+    right_text_three = " "
+    right_text_four = " "
+    right_text_five = " "
+    right_text_six = " "
+    right_text_seven = " "
+    right_text_eight = " "
+    right_text_nine = " "
+    right_text_ten = " "
+    right_text_eleven = " "
+    right_text_twelve = " "
+    right_text_thirteen = " "
+
+
+    create_enemy()
+
+
+
+
+
+def show_inventory():
+    global inventory, right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, right_text_thirteen
+    if inventory == 0:
+        right_text_one = " "
+        right_text_two = " "
+        right_text_three = " "
+        right_text_four = " "
+        right_text_five = " "
+        right_text_six = " "
+        right_text_seven = " "
+        right_text_eight = " "
+        right_text_nine = " "
+        right_text_ten = " "
+        right_text_eleven = " "
+        right_text_twelve = " "
+        right_text_thirteen = " "
+        inventory = 1
+    else:
+        inventory = 0
+def equipped_items_list():
+    global show_equipped, inv_weapon, inv_off_hand, inv_head, inv_shoulders, inv_arms
+    global inv_left_earring, inv_right_earring, inv_left_earring, inv_left_ring
+    global inv_right_ring, inv_left_wristband, inv_right_wristband, inv_chest, inv_legs
+
+    if game_in_progress == 0:
+        return
+    if combat_on == 1:
+        return
+    if show_equipped == 1:
+        show_equipped = 0
+    else:
+        show_equipped = 1
+    equipped_items = "Equipped Items:"
+
+    inv_weapon = "Main Hand: " + str(equipment_player_one.equipped_weapon)
+    inv_off_hand = "Off Hand: " + str(equipment_player_one.equipped_shield)
+    inv_head =  "Head: " + str(equipment_player_one.equipped_head)
+    inv_shoulders = "Shoulders: " + str(equipment_player_one.equipped_shoulders)
+    inv_arms = "Arms: " + str(equipment_player_one.equipped_arms)
+    inv_left_earring = "Left Earring: " + str(equipment_player_one.equipped_earring1)
+    inv_right_earring = "Right Earring: " + str(equipment_player_one.equipped_earring2)
+    inv_left_ring =  "Left Ring: " + str(equipment_player_one.equipped_ring1)
+    inv_right_ring = "Right Ring: " + str(equipment_player_one.equipped_ring2)
+    inv_left_wristband = "Left Wristband: " + str(equipment_player_one.equipped_wristband1)
+    inv_right_wristband = "Right Wristband: " + str(equipment_player_one.equipped_wristband2)
+    inv_chest = "Chest: " + str(equipment_player_one.equipped_chest)
+    inv_legs = "legs: " + str(equipment_player_one.equipped_legs)
+
+def command(text):
+    frog = text
+def draw_status(canvas):
+    if prologue == 1:
+            canvas.draw_image(background_prologue, (500, 300), (1000, 600), (500, 300), (1000, 600))
+
+
+            canvas.draw_text("The Land of Pythe", (200, 80), 50, "Blue", "serif")
+
+
+
+
+    if game_in_progress == 1:
+        canvas.draw_text(str(name_status_player_one()), (850, 110), 18, "Gold")
+        canvas.draw_text(str(hp_status_player_one()), (850, 135), 18, "Red")
+        canvas.draw_text(str(mana_status_player_one()), (850, 160), 18, "Blue")
+        canvas.draw_text(str(class_status_player_one()), (850, 185), 18, "Grey")
+        canvas.draw_text(str(level_status_player_one()), (850, 210), 18, "Purple")
+        canvas.draw_image(gold_icon, (17, 17), (34, 34), (860, 265), (34, 34))
+        canvas.draw_text(str(player_one.gold), (850, 300), 12, "Gold")
+        canvas.draw_image(health_potion_icon, (17, 17), (34, 34), (900, 265), (34, 34))
+        canvas.draw_text(str(health_potion), (895, 300), 12, "Red")
+        canvas.draw_image(mana_potion_icon, (17, 17), (34, 34), (940, 265), (34, 34))
+        canvas.draw_text(str(mana_potion), (935, 300), 12, "Blue")
+
+    if no_player_status == 0 and player_created == 1:
+        canvas.draw_text(str("Exp to level: " + str(player_one.experience_to_level)), (850, 235), 18, "Yellow")
+
+    if combat_on == 1 and combat_over == 0:
+        canvas.draw_text(str(name_status_enemy_one()), (25, 220), 18, "Gold")
+        canvas.draw_text(str(hp_status_enemy_one()), (25, 240), 18, "Green")
+        canvas.draw_text(str(mana_status_enemy_one()), (25, 260), 18, "Blue")
+        canvas.draw_text(str(class_status_enemy_one()), (25, 280), 18, "Grey")
+        canvas.draw_text(str(level_status_enemy_one()), (25, 300), 18, "Purple")
+    if show_equipped == 1:
+        canvas.draw_text(str(inv_weapon), (20, 320), 12, "Cyan")
+        canvas.draw_text(str(inv_off_hand), (20, 340), 12, "Cyan")
+        canvas.draw_text(str(inv_head), (20, 360), 12, "Cyan")
+        canvas.draw_text(str(inv_shoulders), (20, 380), 12, "Cyan")
+        canvas.draw_text(str(inv_arms), (20, 400), 12, "Cyan")
+        canvas.draw_text(str(inv_left_earring), (20, 420), 12, "Cyan")
+        canvas.draw_text(str(inv_right_earring), (20, 440), 12, "Cyan")
+        canvas.draw_text(str(inv_left_ring), (20, 460), 12, "Cyan")
+        canvas.draw_text(str(inv_right_ring), (20, 480), 12, "Cyan")
+        canvas.draw_text(str(inv_left_wristband), (20, 500), 12, "Cyan")
+        canvas.draw_text(str(inv_right_wristband), (20, 520), 12, "Cyan")
+        canvas.draw_text(str(inv_chest), (20, 540), 12, "Cyan")
+        canvas.draw_text(str(inv_legs), (20, 560), 12, "Cyan")
+
+    if attribute == 1:
+        canvas.draw_text(str("Strength: " + str(player_one.strength_total)), (20, 40), 12, "Cyan")
+        canvas.draw_text(str("Dexterity: " + str(player_one.dexterity_total)), (20, 60), 12, "Cyan")
+        canvas.draw_text(str("Agility: " + str(player_one.agility_total)), (20, 80), 12, "Cyan")
+        canvas.draw_text(str("Intelligence: " + str(player_one.intelligence_total)), (20, 100), 12, "Cyan")
+        canvas.draw_text(str("Defense: " + str(player_one.defense)), (20, 120), 12, "Cyan")
+        canvas.draw_text(str("Physical Attack: " + str(player_one.physical_attack)), (20, 140), 12, "Cyan")
+        canvas.draw_text(str("Magical Attack: " + str(player_one.magical_attack)), (20, 160), 12, "Cyan")
+        canvas.draw_text(str("Critical Attack Modifier: " + str(player_one.offensive_critical_chance)), (20, 180), 12, "Cyan")
+        canvas.draw_text(str("Critical Defense Modifier: " + str(player_one.defensive_critical_chance)), (20, 200), 12, "Cyan")
+
+    if inventory == 1:
+        canvas.draw_text("Items in Inventory:", (535, 320), 15, "Cyan")
+        if len(inventory_player_one) == 1:
+            canvas.draw_text(str(inventory_player_one[0].name), (535, 340), 15, "Cyan")
+        if len(inventory_player_one) == 2:
+            canvas.draw_text(str(str(inventory_player_one[0].name) + ", " + str(inventory_player_one[1].name)), (535, 340), 15, "Cyan")
+        if len(inventory_player_one) == 3:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+        if len(inventory_player_one) == 4:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name), (535, 360), 15, "Cyan")
+
+        if len(inventory_player_one) == 5:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name), (535, 360), 15, "Cyan")
+
+        if len(inventory_player_one) == 6:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+
+        if len(inventory_player_one) == 7:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name), (535, 380), 15, "Cyan")
+
+        if len(inventory_player_one) == 8:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name), (535, 380), 15, "Cyan")
+
+        if len(inventory_player_one) == 9:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+        if len(inventory_player_one) == 10:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name), (535, 400), 15, "Cyan")
+
+        if len(inventory_player_one) == 11:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name), (535, 400), 15, "Cyan")
+        if len(inventory_player_one) == 12:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+        if len(inventory_player_one) == 13:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name), (535, 420), 15, "Cyan")
+        if len(inventory_player_one) == 14:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name ), (535, 420), 15, "Cyan")
+
+        if len(inventory_player_one) == 15:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+        if len(inventory_player_one) == 16:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name),  (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name ), (535, 440), 15, "Cyan")
+        if len(inventory_player_one) == 17:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name), (535, 440), 15, "Cyan")
+
+        if len(inventory_player_one) == 18:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+        if len(inventory_player_one) == 19:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name ), (535, 460), 15, "Cyan")
+
+        if len(inventory_player_one) == 20:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name  + ", " + inventory_player_one[19]), (535, 460), 15, "Cyan")
+
+        if len(inventory_player_one) == 21:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name  + ", " + inventory_player_one[19].name  + ", " + inventory_player_one[20].name ), (535, 460), 15, "Cyan")
+
+        if len(inventory_player_one) == 22:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name  + ", " + inventory_player_one[19].name  + ", " + inventory_player_one[20].name ), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name ), (535, 480), 15, "Cyan")
+
+        if len(inventory_player_one) == 23:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name ), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name ), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name ), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name ), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name ), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name ), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name  + ", " + inventory_player_one[19].name  + ", " + inventory_player_one[20].name ), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name  + ", " + inventory_player_one[22].name ), (535, 480), 15, "Cyan")
+
+        if len(inventory_player_one) == 24:
+            canvas.draw_text(str(inventory_player_one[0].name  + ", " + inventory_player_one[1].name  + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name  + ", " + inventory_player_one[4].name  + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name  + ", " + inventory_player_one[7].name  + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name  + ", " + inventory_player_one[10].name  + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name  + ", " + inventory_player_one[13].name  + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name  + ", " + inventory_player_one[16].name  + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name  + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name  + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+
+        if len(inventory_player_one) == 25:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name), (535, 500), 15, "Cyan")
+        if len(inventory_player_one) == 26:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name), (535, 500), 15, "Cyan")
+
+        if len(inventory_player_one) == 27:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+
+        if len(inventory_player_one) == 28:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name), (535, 520), 15, "Cyan")
+
+        if len(inventory_player_one) == 29:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name), (535, 520), 15, "Cyan")
+
+        if len(inventory_player_one) == 30:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+
+        if len(inventory_player_one) == 31:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name), (535, 540), 15, "Cyan")
+
+        if len(inventory_player_one) == 32:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name + ", " + inventory_player_one[31].name), (535, 540), 15, "Cyan")
+
+        if len(inventory_player_one) == 33:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name + ", " + inventory_player_one[31].name + ", " + inventory_player_one[32].name), (535, 540), 15, "Cyan")
+
+        if len(inventory_player_one) == 34:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name + ", " + inventory_player_one[31].name + ", " + inventory_player_one[32].name), (535, 540), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[33].name), (535, 560), 15, "Cyan")
+        if len(inventory_player_one) == 35:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name + ", " + inventory_player_one[31].name + ", " + inventory_player_one[32].name), (535, 540), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[33].name + ", " + inventory_player_one[34].name), (535, 560), 15, "Cyan")
+        if len(inventory_player_one) == 36:
+            canvas.draw_text(str(inventory_player_one[0].name + ", " + inventory_player_one[1].name + ", " + inventory_player_one[2].name), (535, 340), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[3].name + ", " + inventory_player_one[4].name + ", " + inventory_player_one[5].name), (535, 360), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[6].name + ", " + inventory_player_one[7].name + ", " + inventory_player_one[8].name), (535, 380), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[9].name + ", " + inventory_player_one[10].name + ", " + inventory_player_one[11].name), (535, 400), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[12].name + ", " + inventory_player_one[13].name + ", " + inventory_player_one[14].name), (535, 420), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[15].name + ", " + inventory_player_one[16].name + ", " + inventory_player_one[17].name), (535, 440), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[18].name + ", " + inventory_player_one[19].name + ", " + inventory_player_one[20].name), (535, 460), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[21].name + ", " + inventory_player_one[22].name + ", " + inventory_player_one[23].name), (535, 480), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[24].name + ", " + inventory_player_one[25].name + ", " + inventory_player_one[26].name), (535, 500), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[27].name + ", " + inventory_player_one[28].name + ", " + inventory_player_one[29].name), (535, 520), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[30].name + ", " + inventory_player_one[31].name + ", " + inventory_player_one[32].name), (535, 540), 15, "Cyan")
+            canvas.draw_text(str(inventory_player_one[33].name + ", " + inventory_player_one[34].name + ", " + inventory_player_one[35].name), (535, 560), 15, "Cyan")
+
+
+
+
+
+
+    canvas.draw_text(str(text_one), (180, 400), 15, "Yellow")
+    canvas.draw_text(str(text_two), (180, 420), 15, "Yellow")
+    canvas.draw_text(str(text_three), (180, 440), 15, "Yellow")
+    canvas.draw_text(str(text_four), (180, 460), 15, "Yellow")
+    canvas.draw_text(str(text_five), (180, 480), 15, "Yellow")
+    canvas.draw_text(str(text_six), (180, 500), 15, "Yellow")
+    canvas.draw_text(str(text_seven), (180, 520), 15, "Yellow")
+    canvas.draw_text(str(text_eight), (180, 540), 15, "Yellow")
+    canvas.draw_text(str(text_nine), (180, 560), 15, "Yellow")
+    canvas.draw_text(str(text_ten), (180, 580), 15, "Yellow")
+
+    canvas.draw_text(str(right_text_one), (535, 340), 15, "Cyan")
+    canvas.draw_text(str(right_text_two), (535, 360), 15, "Cyan")
+    canvas.draw_text(str(right_text_three), (535, 380), 15, "Cyan")
+    canvas.draw_text(str(right_text_four), (535, 400), 15, "Cyan")
+    canvas.draw_text(str(right_text_five), (535, 420), 15, "Cyan")
+    canvas.draw_text(str(right_text_six), (535, 440), 15, "Cyan")
+    canvas.draw_text(str(right_text_seven), (535, 460), 15, "Cyan")
+    canvas.draw_text(str(right_text_eight), (535, 480), 15, "Cyan")
+    canvas.draw_text(str(right_text_nine), (535, 500), 15, "Cyan")
+    canvas.draw_text(str(right_text_ten), (535, 520), 15, "Cyan")
+    canvas.draw_text(str(right_text_eleven), (535, 540), 15, "Cyan")
+    canvas.draw_text(str(right_text_twelve), (535, 560), 15, "Cyan")
+    canvas.draw_text(str(right_text_thirteen), (535, 580), 15, "Cyan")
+
+
+
+
+
+
+def create_enemy():
+    global enemy_one, monster_created
+    enemy_adjective = ["Slow", "Stupid", "Silly", "Deadly", "Serious", "Angry", "Sexy", "Strong", "Weak", "Incredible", "Super Saiyon"]
+    random_adjective_number = random.randrange(0, 11)
+    if random_adjective_number == 0:
+            enemy_first_name = enemy_adjective[0]
+    if random_adjective_number == 1:
+            enemy_first_name = enemy_adjective[1]
+    if random_adjective_number == 2:
+            enemy_first_name = enemy_adjective[2]
+    if random_adjective_number == 3:
+            enemy_first_name = enemy_adjective[3]
+    if random_adjective_number == 4:
+            enemy_first_name = enemy_adjective[4]
+    if random_adjective_number == 5:
+            enemy_first_name = enemy_adjective[5]
+    if random_adjective_number == 6:
+            enemy_first_name = enemy_adjective[6]
+    if random_adjective_number == 7:
+            enemy_first_name = enemy_adjective[7]
+    if random_adjective_number == 8:
+            enemy_first_name = enemy_adjective[8]
+    if random_adjective_number == 9:
+            enemy_first_name = enemy_adjective[9]
+    if random_adjective_number == 10:
+            enemy_first_name = enemy_adjective[10]
+
+
+    enemy_type = ["Rabbit", "Snake", "Feral Cat", "Owl", "Bullfrog", "Tadpole"]
+    random_enemy_type_number = random.randrange(0, 6)
+    if random_enemy_type_number == 0:
+        enemy_last_name = enemy_type[0]
+    if random_enemy_type_number == 1:
+        enemy_last_name = enemy_type[1]
+    if random_enemy_type_number == 2:
+        enemy_last_name = enemy_type[2]
+    if random_enemy_type_number == 3:
+        enemy_last_name = enemy_type[3]
+    if random_enemy_type_number == 4:
+        enemy_last_name = enemy_type[4]
+    if random_enemy_type_number == 4:
+        enemy_last_name = enemy_type[4]
+    if random_enemy_type_number == 5:
+        enemy_last_name = enemy_type[5]
+
+
+    enemy_class_type = ["wizard", "warrior"]
+    random_class_type_number = random.randrange(0, 2)
+    if random_class_type_number == 0:
+        enemy_class = enemy_class_type[0]
+    if random_class_type_number == 1:
+        enemy_class = enemy_class_type[1]
+    if enemy_class == "warrior":
+        enemy_class_physical_attack_bonus = 10
+        enemy_class_magical_attack_bonus = 0
+    if enemy_class == "wizard":
+        enemy_class_physical_attack_bonus = 0
+        enemy_class_magical_attack_bonus = 10
+
+    enemy_full_name = str(enemy_first_name) + " " + str(enemy_last_name)
+    enemy_current_mana = 400
+    enemy_current_hp = 400
+    enemy_agility = random.randrange(1, 21)
+    enemy_strength = random.randrange(1, 21)
+    enemy_dexterity = random.randrange(1, 21)
+    enemy_intelligence = random.randrange(1, 21)
+    enemy_armor = random.randrange(1, 20)
+    enemy_gold = random.randrange(0, 11)
+    enemy_loot = "none"
+    ability_bonus = 0
+    enemy_level = random.randrange(1, 6)
+    enemy_attack_speed = random.randrange(3, 8)
+    enemy_one = Monster(enemy_full_name, enemy_level, enemy_class, enemy_agility, enemy_strength, enemy_dexterity, enemy_intelligence, enemy_armor, enemy_gold, enemy_loot, enemy_class_physical_attack_bonus, enemy_class_magical_attack_bonus, enemy_attack_speed, ability_bonus)
+    monster_created = 1
+def create_common_armor_item():
+    global item_head, item_legs, item_ring, item_bracelet, item_earring, item_chest, item_boots, item_shield, item_shoulders
+    global head, legs, bracelet, ring, earring, chest, legs, shield, boots, shoulders, player_one_inventory, player_one, enemy_one
+    common_adjectives = ["a rough", "a patchy", "a ripped", "a stained", "a torn"]
+    material = ["homespun", "wool", "linen", "twig", "bark", "copper", "granite"]
+    kind = ["fish hook", "bent earring", "bent ring", "bent necklace", "bent bracelet", "wristband", "hood", "hat", "cap", "shoulder patch", "pads", "drape", "cape", "wraps", "armbands", "sleeves", "tunic", "bag", "rag", "leggings", "skirt", "kilt", "thread"]
+    kind_roll = random.randrange(0, 22)
+    if kind_roll == 0:
+        third_name = kind[0]
+        material_roll = random.randrange(3, 7)
+        if material_roll == 3:
+            second_name = material[3]
+        if material_roll == 4:
+            second_name = material[4]
+        if material_roll == 5:
+            second_name = material[5]
+        if material_roll == 6:
+            second_name = material[6]
+
+    elif kind_roll == 1:
+        third_name = kind[1]
+        material_roll = random.randrange(3, 7)
+        if material_roll == 3:
+            second_name = material[3]
+        if material_roll == 4:
+            second_name = material[4]
+        if material_roll == 5:
+            second_name = material[5]
+        if material_roll == 6:
+            second_name = material[6]
+    elif kind_roll == 2:
+        third_name = kind[2]
+        material_roll = random.randrange(3, 7)
+        if material_roll == 3:
+            second_name = material[3]
+        if material_roll == 4:
+            second_name = material[4]
+        if material_roll == 5:
+            second_name = material[5]
+        if material_roll == 6:
+            second_name = material[6]
+    elif kind_roll == 3:
+        third_name = kind[3]
+        material_roll = random.randrange(3, 7)
+        if material_roll == 3:
+            second_name = material[3]
+        if material_roll == 4:
+            second_name = material[4]
+        if material_roll == 5:
+            second_name = material[5]
+        if material_roll == 6:
+            second_name = material[6]
+    elif kind_roll == 4:
+        third_name = kind[4]
+        material_roll = random.randrange(3, 7)
+        if material_roll == 3:
+            second_name = material[3]
+        if material_roll == 4:
+            second_name = material[4]
+        if material_roll == 5:
+            second_name = material[5]
+        if material_roll == 6:
+            second_name = material[6]
+    elif kind_roll == 5:
+        third_name = kind[5]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 6:
+        third_name = kind[6]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 7:
+        third_name = kind[7]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 8:
+        third_name = kind[8]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 9:
+        third_name = kind[9]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 10:
+        third_name = kind[10]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 11:
+        third_name = kind[11]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 12:
+        third_name = kind[12]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 13:
+        third_name = kind[13]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 14:
+        third_name = kind[14]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 15:
+        third_name = kind[15]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 16:
+        third_name = kind[16]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 17:
+        third_name = kind[17]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 18:
+        third_name = kind[18]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 19:
+        third_name = kind[19]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 20:
+        third_name = kind[20]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    elif kind_roll == 21:
+        third_name = kind[21]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+    else:
+        third_name = kind[22]
+        material_roll = random.randrange(0, 3)
+        if material_roll == 0:
+            second_name = material[0]
+        if material_roll == 1:
+            second_name = material[1]
+        if material_roll == 2:
+            second_name = material[2]
+        if material_roll == 3:
+            second_name = material[3]
+
+    first_name_roll = random.randrange(0, 5)
+    if first_name_roll == 0:
+        first_name = common_adjectives[0]
+    elif first_name_roll == 1:
+        first_name = common_adjectives[1]
+    elif first_name_roll == 2:
+        first_name = common_adjectives[2]
+    elif first_name_roll == 3:
+        first_name = common_adjectives[3]
+    elif first_name_roll == 4:
+        first_name = common_adjectives[4]
+
+
+    if third_name == kind[0] or third_name == kind[1] or third_name == kind[2] or third_name == kind[3] or third_name == kind[4] or third_name == kind[5]:
+        kind_dex_bonus = random.randrange(0, 2)
+        kind_int_bonus = random.randrange(0, 2)
+        kind_str_bonus = random.randrange(0, 2)
+        kind_agi_bonus = random.randrange(0, 2)
+        kind_armor_bonus = random.randrange(0, 2)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    elif third_name == kind[6] or third_name == kind[7] or third_name == kind[8]:
+        kind_dex_bonus = random.randrange(0, 3)
+        kind_int_bonus = random.randrange(0, 3)
+        kind_str_bonus = random.randrange(0, 3)
+        kind_agi_bonus = random.randrange(0, 3)
+        kind_armor_bonus = random.randrange(0, 3)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    elif third_name == kind[9] or third_name == kind[10] or third_name == kind[11] or third_name == kind[12]:
+        kind_dex_bonus = random.randrange(0, 3)
+        kind_int_bonus = random.randrange(0, 3)
+        kind_str_bonus = random.randrange(0, 3)
+        kind_agi_bonus = random.randrange(0, 3)
+        kind_armor_bonus = random.randrange(0, 3)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    elif third_name == kind[13] or third_name == kind[14] or third_name == kind[15]:
+        kind_dex_bonus = random.randrange(0, 3)
+        kind_int_bonus = random.randrange(0, 3)
+        kind_str_bonus = random.randrange(0, 3)
+        kind_agi_bonus = random.randrange(0, 3)
+        kind_armor_bonus = random.randrange(0, 3)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    elif third_name == kind[16] or third_name == kind[17] or third_name == kind[18]:
+        kind_dex_bonus = random.randrange(0, 5)
+        kind_int_bonus = random.randrange(0, 5)
+        kind_str_bonus = random.randrange(0, 5)
+        kind_agi_bonus = random.randrange(0, 5)
+        kind_armor_bonus = random.randrange(0, 5)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    elif third_name == kind[19] or third_name == kind[20] or third_name == kind[21] or third_name == kind[22]:
+        kind_dex_bonus = random.randrange(0, 4)
+        kind_int_bonus = random.randrange(0, 4)
+        kind_str_bonus = random.randrange(0, 4)
+        kind_agi_bonus = random.randrange(0, 4)
+        kind_armor_bonus = random.randrange(0, 4)
+        kind_hp_bonus = random.randrange(1, 6)
+        kind_mana_bonus = random.randrange(1, 6)
+
+    if second_name == material[0]:
+        material_dex_bonus = random.randrange(0, 2)
+        material_int_bonus = random.randrange(0, 2)
+        material_str_bonus = random.randrange(0, 2)
+        material_agi_bonus = random.randrange(0, 2)
+        material_armor_bonus = random.randrange(0, 2)
+        material_hp_bonus = random.randrange(1, 8)
+        material_mana_bonus = random.randrange(1, 8)
+    elif second_name == material[1]:
+        material_dex_bonus = random.randrange(0, 3)
+        material_int_bonus = random.randrange(0, 3)
+        material_str_bonus = random.randrange(0, 3)
+        material_agi_bonus = random.randrange(0, 3)
+        material_armor_bonus = random.randrange(0, 3)
+        material_hp_bonus = random.randrange(1, 9)
+        material_mana_bonus = random.randrange(1, 9)
+    elif second_name == material[2]:
+        material_dex_bonus = random.randrange(0, 4)
+        material_int_bonus = random.randrange(0, 4)
+        material_str_bonus = random.randrange(0, 4)
+        material_agi_bonus = random.randrange(0, 4)
+        material_armor_bonus = random.randrange(0, 4)
+        material_hp_bonus = random.randrange(1, 10)
+        material_mana_bonus = random.randrange(1, 10)
+    elif second_name == material[3]:
+        material_dex_bonus = random.randrange(0, 1)
+        material_int_bonus = random.randrange(0, 1)
+        material_str_bonus = random.randrange(0, 1)
+        material_agi_bonus = random.randrange(0, 1)
+        material_armor_bonus = random.randrange(0, 2)
+        material_hp_bonus = random.randrange(1, 5)
+        material_mana_bonus = random.randrange(1, 5)
+    elif second_name == material[4]:
+        material_dex_bonus = random.randrange(0, 1)
+        material_int_bonus = random.randrange(0, 1)
+        material_str_bonus = random.randrange(0, 2)
+        material_agi_bonus = random.randrange(0, 1)
+        material_armor_bonus = random.randrange(0, 3)
+        material_hp_bonus = random.randrange(1, 4)
+        material_mana_bonus = random.randrange(1, 7)
+    elif second_name == material[5]:
+        material_dex_bonus = random.randrange(0, 2)
+        material_int_bonus = random.randrange(0, 1)
+        material_str_bonus = random.randrange(0, 1)
+        material_agi_bonus = random.randrange(0, 2)
+        material_armor_bonus = random.randrange(0, 1)
+        material_hp_bonus = random.randrange(1, 7)
+        material_mana_bonus = random.randrange(1, 3)
+    elif second_name == material[6]:
+        material_dex_bonus = random.randrange(0, 2)
+        material_int_bonus = random.randrange(0, 1)
+        material_str_bonus = random.randrange(0, 2)
+        material_agi_bonus = random.randrange(0, 1)
+        material_armor_bonus = random.randrange(0, 4)
+        material_hp_bonus = random.randrange(1, 12)
+        material_mana_bonus = random.randrange(1, 2)
+
+
+    item_dex = material_dex_bonus + kind_dex_bonus
+    item_int = material_int_bonus + kind_int_bonus
+    item_str = material_str_bonus + kind_str_bonus
+    item_agi = material_agi_bonus + kind_agi_bonus
+    item_armor = material_armor_bonus + kind_armor_bonus
+    item_hp = material_hp_bonus + kind_hp_bonus
+    item_mana = material_mana_bonus + kind_mana_bonus
+    full_name = first_name + " " + second_name + " " + third_name
+    weapon_damage = 0
+
+    if kind_roll == 0 or kind_roll == 1:
+         earring = Item_earring("earring", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+         enemy_one.loot = earring
+
+    elif kind_roll == 2:
+             ring = Item_ring("ring", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+             enemy_one.loot = ring
+
+    elif kind_roll == 3:
+
+            necklace = Item_necklace("necklace", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+            enemy_one.loot = necklace
+
+    elif kind_roll == 4 or kind_roll == 5:
+
+            bracelet = Item_bracelet("bracelet", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+            enemy_one.loot = bracelet
+
+    elif kind_roll == 6 or kind_roll == 7 or kind_roll == 8:
+
+             head = Item_head("head", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+             enemy_one.loot = head
+
+
+    elif kind_roll == 9 or kind_roll == 10 or kind_roll == 11 or kind_roll == 12:
+
+             shoulders = Item_shoulders("shoulders", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+             enemy_one.loot = shoulders
+
+    elif kind_roll == 13 or kind_roll == 14 or kind_roll == 15:
+
+             arms = Item_arms("arms", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+             enemy_one.loot = arms
+
+    elif kind_roll == 16 or kind_roll == 17 or kind_roll == 18:
+
+            chest = Item_chest("chest", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+            enemy_one.loot = chest
+    elif kind_roll == 19 or kind_roll == 20 or kind_roll == 21 or kind_roll == 22:
+
+            legs = Item_legs("legs", full_name, item_hp, item_mana, item_str, item_agi, item_dex, item_int, item_armor)
+            enemy_one.loot = legs
+
+
+
+def create_common_weapon_item():
+     print " "
+def create_uncommon_item():
+    print " "
+def create_rare_item():
+    print " "
+def player_one_regen_timer():
+    global player_one
+    if player_one.current_hp <= (player_one.max_hp - 4):
+        player_one.current_hp += 4
+    elif player_one.current_hp >= (player_one.max_hp - 4):
+        player_one.current_hp += (player_one.max_hp - player_one.current_hp)
+
+def enemy_one_regen_timer():
+    if (enemy_one.current_hp <= (enemy_one.max_hp - 4)) and (enemy_one.current_hp > 0):
+        enemy_one.current_hp += 4
+    elif enemy_one.current_hp >= (enemy_one.max_hp - 4):
+        enemy_one.current_hp += (enemy_one.max_hp - enemy_one.current_hp)
+
+def timer_battle_enemy_one():
+
+    global battle_enemy_one_timer_counter
+
+    battle_enemy_one_timer_counter += 5
+
+def timer_battle_player_one():
+
+    global battle_player_one_timer_counter
+
+    battle_player_one_timer_counter += 5
+
+
+def combat():
+    global combat_over, monster_created, level_status_enemy_one, create_enemy, class_status_enemy_one, name_status_enemy_one, hp_status_enemy_one, mana_status_enemy_one, attack_defend, combat_on, battle_player_one_timer, battle_enemy_one_timer, player_one, enemy_one
+    if game_in_progress == 0:
+        return
+    if player_dead == 1:
+        return
+    if combat_over == 1:
+        return
+    combat_on = 1
+    if monster_created == 0:
+        create_enemy()
+    player_one_regen_timer.start()
+    enemy_one_regen_timer.start()
+    def name_status_enemy_one():
+        return str(enemy_one.name)
+    def hp_status_enemy_one():
+        return "Health: " + str(enemy_one.current_hp) + " / " + str(enemy_one.max_hp)
+    def mana_status_enemy_one():
+        return "Mana: " + str(enemy_one.current_mana) + " / " + str(enemy_one.max_mana)
+    def class_status_enemy_one():
+        return "Class: " + str(enemy_one.class_type)
+    def level_status_enemy_one():
+        return "Level:" + str(enemy_one.level)
+    player_one_timer.start()
+    if battle_player_one_timer_counter % 5 == 0:
+        enemy_one_timer.start()
+        attack_defend()
+
+
+
+
+def attack_defend():
+    global text_one, text_two, text_three, text_four, text_five, text_six, text_seven, text_eight, text_nine, text_ten, attack_now, combat_on, player_one, enemy_one, attack_text, player_damage_dealt, enemy_damage_dealt, miss_text,activate_enemy_one_attack, activate_player_one_attack, activate_player_one_miss, activate_enemy_one_miss, activate_player_one_dodge, activate_enemy_one_dodge, enemy_victory, player_victory
+    if battle_player_one_timer_counter % 5 == 0:
+        miss_dodge_chance = 100 - int(player_one.offensive_miss_chance + enemy_one.defensive_miss_chance)
+        miss_dodge_roll = random.randrange(0, 100)
+        if miss_dodge_roll >= 0 and miss_dodge_roll <= miss_dodge_chance:
+            activate_player_one_attack = 1
+            player_damage_dealt()
+            enemy_loses_health()
+            attack_text()
+            if text_one == " ":
+                text_one = attack_text()
+            elif text_two == " ":
+                text_two = attack_text()
+            elif text_three == " ":
+                text_three = attack_text()
+            elif text_four == " ":
+                text_four = attack_text()
+            elif text_five == " ":
+                text_five = attack_text()
+            elif text_six == " ":
+                text_six = attack_text()
+            elif text_seven == " ":
+                text_seven = attack_text()
+            elif text_eight == " ":
+                text_eight = attack_text()
+            elif text_nine == " ":
+                text_nine = attack_text()
+            else:
+                if text_ten == " ":
+                    text_ten = attack_text()
+                else:
+                    text_one = text_two
+                    text_two = text_three
+                    text_three = text_four
+                    text_four = text_five
+                    text_five = text_six
+                    text_six = text_seven
+                    text_seven = text_eight
+                    text_eight = text_nine
+                    text_nine = text_ten
+                    text_ten = attack_text()
+            attack_now = 1
+            print  "atk " + str(attack_text())
+            activate_player_one_attack = 0
+
+
+
+        else:
+            enemy_one_dodge_roll = random.randrange(0, 100)
+            if enemy_one_dodge_roll >= 0 and enemy_one_dodge_roll <= enemy_one.defensive_miss_chance:
+                activate_enemy_one_dodge = 1
+                dodge_text()
+                if text_one == " ":
+                            text_one = dodge_text()
+                elif text_two == " ":
+                            text_two = dodge_text()
+                elif text_three == " ":
+                            text_three = dodge_text()
+                elif text_four == " ":
+                            text_four = dodge_text()
+                elif text_five == " ":
+                            text_five = dodge_text()
+                elif text_six == " ":
+                            text_six = dodge_text()
+                elif text_seven == " ":
+                            text_seven = dodge_text()
+                elif text_eight == " ":
+                            text_eight = dodge_text()
+                elif text_nine == " ":
+                            text_nine = attack_text()
+                else:
+                            if text_ten == " ":
+                                text_ten = dodge_text()
+                            else:
+                                text_one = text_two
+                                text_two = text_three
+                                text_three = text_four
+                                text_four = text_five
+                                text_five = text_six
+                                text_six = text_seven
+                                text_seven = text_eight
+                                text_eight = text_nine
+                                text_nine = text_ten
+                                text_ten = dodge_text()
+                activate_enemy_one_dodge = 0
+            else:
+                activate_player_one_miss = 1
+                miss_text()
+                if text_one == " ":
+                    text_one = miss_text()
+                elif text_two == " ":
+                    text_two = miss_text()
+                elif text_three == " ":
+                    text_three = miss_text()
+                elif text_four == " ":
+                    text_four = miss_text()
+                elif text_five == " ":
+                    text_five = miss_text()
+                elif text_six == " ":
+                    text_six = miss_text()
+                elif text_seven == " ":
+                    text_seven = miss_text()
+                elif text_eight == " ":
+                    text_eight = miss_text()
+                elif text_nine == " ":
+                    text_nine = miss_text()
+                else:
+                    if text_ten == " ":
+                        text_ten = miss_text()
+                    else:
+                        text_one = text_two
+                        text_two = text_three
+                        text_three = text_four
+                        text_four = text_five
+                        text_five = text_six
+                        text_six = text_seven
+                        text_seven = text_eight
+                        text_eight = text_nine
+                        text_nine = text_ten
+                        text_ten = miss_text()
+                activate_player_one_miss = 0
+
+
+
+    if battle_enemy_one_timer_counter % 5 == 0:
+            miss_dodge_chance = 100 - int(enemy_one.offensive_miss_chance + player_one.defensive_miss_chance)
+            miss_dodge_roll = random.randrange(0, 100)
+            if miss_dodge_roll <= miss_dodge_chance:
+                activate_enemy_one_attack = 1
+                enemy_damage_dealt()
+                player_loses_health()
+                attack_text()
+                if text_one == " ":
+                    text_one = attack_text()
+                elif text_two == " ":
+                    text_two = attack_text()
+                elif text_three == " ":
+                    text_three = attack_text()
+                elif text_four == " ":
+                    text_four = attack_text()
+                elif text_five == " ":
+                    text_five = attack_text()
+                elif text_six == " ":
+                    text_six = attack_text()
+                elif text_seven == " ":
+                    text_seven = attack_text()
+                elif text_eight == " ":
+                    text_eight = attack_text()
+                elif text_nine == " ":
+                    text_nine = attack_text()
+                else:
+                    if text_ten == " ":
+                        text_ten = attack_text()
+                    else:
+                        text_one = text_two
+                        text_two = text_three
+                        text_three = text_four
+                        text_four = text_five
+                        text_five = text_six
+                        text_six = text_seven
+                        text_seven = text_eight
+                        text_eight = text_nine
+                        text_nine = text_ten
+                        text_ten = attack_text()
+                attack_now = 1
+                activate_enemy_one_attack = 0
+            else:
+                player_one_dodge_roll = random.randrange(0, 100)
+                if player_one_dodge_roll <= player_one.defensive_miss_chance:
+                    activate_player_one_dodge = 1
+                    dodge_text()
+                    if text_one == " ":
+                        text_one = dodge_text()
+                    elif text_two == " ":
+                        text_two = dodge_text()
+                    elif text_three == " ":
+                        text_three = dodge_text()
+                    elif text_four == " ":
+                        text_four = dodge_text()
+                    elif text_five == " ":
+                        text_five = dodge_text()
+                    elif text_six == " ":
+                        text_six = dodge_text()
+                    elif text_seven == " ":
+                        text_seven = dodge_text()
+                    elif text_eight == " ":
+                        text_eight = dodge_text()
+                    elif text_nine == " ":
+                        text_nine = attack_text()
+                    else:
+                        if text_ten == " ":
+                            text_ten = dodge_text()
+                        else:
+                            text_one = text_two
+                            text_two = text_three
+                            text_three = text_four
+                            text_four = text_five
+                            text_five = text_six
+                            text_six = text_seven
+                            text_seven = text_eight
+                            text_eight = text_nine
+                            text_nine = text_ten
+                            text_ten = dodge_text()
+                    activate_player_one_dodge = 0
+                else:
+                    activate_enemy_one_miss = 1
+                    miss_text()
+                    if text_one == " ":
+                                text_one = miss_text()
+                    elif text_two == " ":
+                                text_two = miss_text()
+                    elif text_three == " ":
+                                text_three = miss_text()
+                    elif text_four == " ":
+                                text_four = miss_text()
+                    elif text_five == " ":
+                                text_five = miss_text()
+                    elif text_six == " ":
+                                text_six = miss_text()
+                    elif text_seven == " ":
+                                text_seven = miss_text()
+                    elif text_eight == " ":
+                                text_eight = miss_text()
+                    elif text_nine == " ":
+                                text_nine = miss_text()
+                    else:
+                                if text_ten == " ":
+                                    text_ten = miss_text()
+                                else:
+                                    text_one = text_two
+                                    text_two = text_three
+                                    text_three = text_four
+                                    text_four = text_five
+                                    text_five = text_six
+                                    text_six = text_seven
+                                    text_seven = text_eight
+                                    text_eight = text_nine
+                                    text_nine = text_ten
+                                    text_ten = miss_text()
+                    activate_enemy_one_miss = 0
+def player_damage_dealt():
+    global player_total_damage, player_one, enemy_one
+    damage_randomization = random.randrange(-7, 7)
+    player_initial_damage = (player_one.attack - enemy_one.defense) + damage_randomization + 500
+    crit_check_roll = random.randrange(0, 100)
+    crit_chance = player_one.offensive_critical_chance - enemy_one.defensive_critical_chance
+    if crit_check_roll <= crit_chance:
+         player_total_damage = player_initial_damage * 2
+
+    else:
+        player_total_damage = player_initial_damage
+    if player_total_damage <= 0:
+        player_total_damage = 1
+
+
+def enemy_loses_health():
+    global enemy_one, player_victory
+    enemy_one.current_hp = enemy_one.current_hp - player_total_damage
+    if enemy_one.current_hp <= 0:
+        enemy_one.current_hp = 0
+        player_victory()
+
+def enemy_victory():
+    global player_dead, combat_on, battle_player_one_timer, battle_enemy_one_timer, combat_over, combat_round
+    return "You have been brutally slain by " + str(enemy_one.name)
+    player_dead = 1
+    player_one_regen_timer.stop()
+    combat_on = 0
+    combat_over = 1
+    battle_player_one_timer = 0
+    battle_enemy_one_timer = 0
+
+def level_up_reward():
+    global player_one
+    if player_one.class_type == "warrior":
+        player_one.strength += 5
+        player_one.dexterity += 2
+        player_one.agility += 1
+        player_one.intelligence +=1
+    if player_one.class_type == "wizard":
+        player_one.strength += 1
+        player_one.dexterity += 1
+        player_one.agility += 2
+        player_one.intelligence += 5
+
+
+def mob_experience():
+    global player_one, enemy_one, battle_enemy_one_timer, battle_player_one_timer, combat_over, mob_experience, combat_round
+    battle_enemy_one_timer = 0
+    battle_player_one_timer = 0
+    creature_player_difference = player_one.level - enemy_one.level
+    enemy_one.experience = int(enemy_one.experience - (.05 * enemy_one.experience * creature_player_difference))
+    player_one.experience_to_level -= enemy_one.experience
+
+    if player_one.experience_to_level <= 0:
+        player_one.level += 1
+        player_one.experience_to_level = 200 + 2 ** (3 * player_one.level)
+        combat_over = 1
+        level_up_reward()
+        return "Congratulations" + ", " + str(player_one.name) + "!" " You are now level " + str(player_one.level)
+    else:
+        return " "
+
+
+def player_victory():
+    global player_victory_text1, player_one, enemy_one, combat_on, combat_over, monster_created, combat_round, player_victory_text1, player_victory_text2, player_victory_text3, right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, right_text_thirteen
+    player_one.gold += enemy_one.gold
+    monster_loot()
+    player_victory_text1 = str(player_one.name) + " is victorious!"
+    if right_text_one == " ":
+            right_text_one = player_victory_text1
+    elif right_text_two == " ":
+            right_text_two = player_victory_text1
+    elif right_text_three == " ":
+            right_text_three = player_victory_text1
+    elif right_text_four == " ":
+            right_text_four = player_victory_text1
+    elif right_text_five == " ":
+            right_text_five = player_victory_text1
+    elif right_text_six == " ":
+            right_text_six = player_victory_text1
+    elif right_text_seven == " ":
+            right_text_seven = player_victory_text1
+    elif right_text_eight == " ":
+            right_text_eight = player_victory_text1
+    elif right_text_nine == " ":
+            right_text_nine = player_victory_text1
+    elif right_text_ten == " ":
+            right_text_ten = player_victory_text1
+    elif right_text_eleven == " ":
+            right_text_eleven = player_victory_text1
+    elif right_text_twelve == " ":
+            right_text_twelve = player_victory_text1
+    elif right_text_thirteen == " ":
+            right_text_thirteen = player_victory_text1
+    else:
+            right_text_one = right_text_two
+            right_text_two = right_text_three
+            right_text_three = right_text_four
+            right_text_four = right_text_five
+            right_text_five = right_text_six
+            right_text_six = right_text_seven
+            right_text_seven = right_text_eight
+            right_text_eight = right_text_nine
+            right_text_nine = right_text_ten
+            right_text_ten = right_text_eleven
+            right_text_eleven = right_text_twelve
+            right_text_twelve = right_text_thirteen
+            right_text_thirteen = player_victory_text1
+
+    player_victory_text2 = str(player_one.name) + " gains " + str(enemy_one.experience) + " experience " + " and " + str(enemy_one.gold) + " gold" + "."
+    print player_victory_text2
+    if right_text_one == " ":
+            right_text_one = player_victory_text2
+    elif right_text_two == " ":
+            right_text_two = player_victory_text2
+    elif right_text_three == " ":
+            right_text_three = player_victory_text2
+    elif right_text_four == " ":
+            right_text_four = player_victory_text2
+    elif right_text_five == " ":
+            right_text_five = player_victory_text2
+    elif right_text_six == " ":
+            right_text_six = player_victory_text2
+    elif right_text_seven == " ":
+            right_text_seven = player_victory_text2
+    elif right_text_eight == " ":
+            right_text_eight = player_victory_text2
+    elif right_text_nine == " ":
+            right_text_nine = player_victory_text2
+    elif right_text_ten == " ":
+            right_text_ten = player_victory_text2
+    elif right_text_eleven == " ":
+            right_text_eleven = player_victory_text2
+    elif right_text_twelve == " ":
+            right_text_twelve = player_victory_text2
+    elif right_text_thirteen == " ":
+            right_text_thirteen = player_victory_text2
+    else:
+            right_text_one = right_text_two
+            right_text_two = right_text_three
+            right_text_three = right_text_four
+            right_text_four = right_text_five
+            right_text_five = right_text_six
+            right_text_six = right_text_seven
+            right_text_seven = right_text_eight
+            right_text_eight = right_text_nine
+            right_text_nine = right_text_ten
+            right_text_ten = right_text_eleven
+            right_text_eleven = right_text_twelve
+            right_text_twelve = right_text_thirteen
+            right_text_thirteen = player_victory_text2
+    player_victory_text3 = str(player_one.name) + " takes " +  str(enemy_one.loot.name) + " from the corpse of the " + str(enemy_one.name)
+    print player_victory_text3
+    if right_text_one == " ":
+            right_text_one = player_victory_text3
+    elif right_text_two == " ":
+            right_text_two = player_victory_text3
+    elif right_text_three == " ":
+            right_text_three = player_victory_text3
+    elif right_text_four == " ":
+            right_text_four = player_victory_text3
+    elif right_text_five == " ":
+            right_text_five = player_victory_text3
+    elif right_text_six == " ":
+            right_text_six = player_victory_text3
+    elif right_text_seven == " ":
+            right_text_seven = player_victory_text3
+    elif right_text_eight == " ":
+            right_text_eight = player_victory_text3
+    elif right_text_nine == " ":
+            right_text_nine = player_victory_text3
+    elif right_text_ten == " ":
+            right_text_ten = player_victory_text3
+    elif right_text_eleven == " ":
+            right_text_eleven = player_victory_text3
+    elif right_text_twelve == " ":
+            right_text_twelve = player_victory_text3
+    elif right_text_thirteen == " ":
+            right_text_thirteen = player_victory_text3
+    else:
+            right_text_one = right_text_two
+            right_text_two = right_text_three
+            right_text_three = right_text_four
+            right_text_four = right_text_five
+            right_text_five = right_text_six
+            right_text_six = right_text_seven
+            right_text_seven = right_text_eight
+            right_text_eight = right_text_nine
+            right_text_nine = right_text_ten
+            right_text_ten = right_text_eleven
+            right_text_eleven = right_text_twelve
+            right_text_twelve = right_text_thirteen
+            right_text_thirteen = player_victory_text3
+    mob_experience()
+    if right_text_one == " ":
+            right_text_one = mob_experience()
+    elif right_text_two == " ":
+            right_text_two = mob_experience()
+    elif right_text_three == " ":
+            right_text_three = mob_experience()
+    elif right_text_four == " ":
+            right_text_four = mob_experience()
+    elif right_text_five == " ":
+            right_text_five = mob_experience()
+    elif right_text_six == " ":
+            right_text_six = mob_experience()
+    elif right_text_seven == " ":
+            right_text_seven = mob_experience()
+    elif right_text_eight == " ":
+            right_text_eight = mob_experience()
+    elif right_text_nine == " ":
+            right_text_nine = mob_experience()
+    elif right_text_ten == " ":
+            right_text_ten = mob_experience()
+    elif right_text_eleven == " ":
+            right_text_eleven = mob_experience()
+    elif right_text_twelve == " ":
+            right_text_twelve = mob_experience()
+    elif right_text_thirteen == " ":
+            right_text_thirteen = mob_experience()
+    else:
+            right_text_one = right_text_two
+            right_text_two = right_text_three
+            right_text_three = right_text_four
+            right_text_four = right_text_five
+            right_text_five = right_text_six
+            right_text_six = right_text_seven
+            right_text_seven = right_text_eight
+            right_text_eight = right_text_nine
+            right_text_nine = right_text_ten
+            right_text_ten = right_text_eleven
+            right_text_eleven = right_text_twelve
+            right_text_twelve = right_text_thirteen
+            right_text_thirteen = mob_experience()
+    combat_on =0
+    monster_created = 0
+    combat_over = 1
+def monster_loot():
+    global health_potion, mana_potion, monster_one, player_one_inventory, player_one, enemy_one
+    hp_potion_roll = random.randrange(0, 4)
+    mana_potion_roll = random.randrange(0, 4)
+    if hp_potion_roll == 3:
+        health_potion += 1
+    if mana_potion_roll == 3:
+        mana_potion += 1
+    loot_common_roll = random.randrange(3, 5)
+    create_common_armor_item()
+    inventory_player_one.append(enemy_one.loot)
+
+
+def enemy_damage_dealt():
+    global enemy_total_damage, player_one, enemy_one
+    damage_randomization = random.randrange(-5, 6)
+    enemy_initial_damage = (enemy_one.attack - player_one.defense) + damage_randomization
+    crit_check_roll = random.randrange(0, 100)
+    crit_chance = enemy_one.offensive_critical_chance - player_one.defensive_critical_chance
+    if crit_check_roll <= crit_chance:
+        enemy_total_damage = enemy_initial_damage * 2
+    else:
+        enemy_total_damage = enemy_initial_damage
+    if enemy_total_damage <= 0:
+        enemy_total_damage = 1
+
+
+def player_loses_health():
+    global player_dead, player_one, enemy_victory, right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, right_text_thirteen
+    player_one.current_hp = player_one.current_hp - enemy_total_damage
+    if player_one.current_hp < 0:
+        player_one.current_hp = 0
+        enemy_victory()
+        if right_text_one == " ":
+            right_text_one = enemy_victory()
+        elif right_text_two == " ":
+            right_text_two = enemy_victory()
+        elif right_text_three == " ":
+            right_text_three = enemy_victory()
+        elif right_text_four == " ":
+            right_text_four = enemy_victory()
+        elif right_text_five == " ":
+            right_text_five = enemy_victory()
+        elif right_text_six == " ":
+            right_text_six = enemy_victory()
+        elif right_text_seven == " ":
+            right_text_seven = enemy_victory()
+        elif right_text_eight == " ":
+            right_text_eight = enemy_victory()
+        elif right_text_nine == " ":
+            right_text_nine = enemy_victory()
+        elif right_text_ten == " ":
+            right_text_ten = enemy_victory()
+        elif right_text_eleven == " ":
+            right_text_eleven = enemy_victory()
+        elif right_text_twelve == " ":
+            right_text_twelve = enemy_victory()
+        elif right_text_thirteen == " ":
+            right_text_thirteen = enemy_victory()
+        else:
+            right_text_one = right_text_two
+            right_text_two = right_text_three
+            right_text_three = right_text_four
+            right_text_four = right_text_five
+            right_text_five = right_text_six
+            right_text_six = right_text_seven
+            right_text_seven = right_text_eight
+            right_text_eight = right_text_nine
+            right_text_nine = right_text_ten
+            right_text_ten = right_text_eleven
+            right_text_eleven = right_text_twelve
+            right_text_twelve = right_text_thirteen
+            right_text_thirteen = enemy_victory()
+        player_dead = 1
+        enemy_one.current_hp = enemy_one.max_hp
+
+def attack_text():
+    global player_one, enemy_one, player_total_damage, enemy_total_damage, attack_now, combat_round
+    combat_round += 1
+    if activate_player_one_attack == 1 and ((player_one.current_hp > 0) and (enemy_one.current_hp > 0)):
+        print  str(player_one.name) + " hits " + str(enemy_one.name) + " for " + str(player_total_damage) + " points of damage."
+        cat = str(player_one.name) + " hits " + str(enemy_one.name) + " for " + str(player_total_damage) + " points of damage."
+        return cat
+    if activate_enemy_one_attack == 1 and ((player_one.current_hp > 0) and (enemy_one.current_hp > 0)):
+        print str(enemy_one.name) + " hits " + str(player_one.name) + " for " + str(enemy_total_damage) + " points of damage."
+        cat = str(enemy_one.name) + " hits " + str(player_one.name) + " for " + str(enemy_total_damage) + " points of damage."
+        return cat
+def dodge_text():
+        if (activate_player_one_dodge == 1) and ((player_one.current_hp > 0) and (enemy_one.current_hp > 0)):
+            return str(player_one.name) + " dodges " + str(enemy_one.name) + " attack."
+        if activate_enemy_one_dodge == 1 and ((player_one.current_hp > 0) and (enemy_one.current_hp > 0)):
+            return str(enemy_one.name) + " dodges " + str(player_one.name) + " attack."
+
+def miss_text():
+    if activate_player_one_miss == 1 and ((player_one.current_hp > 0) and (player_one.current_hp > 0)):
+         return str(player_one.name) + " misses."
+
+    if activate_enemy_one_miss == 1 and ((enemy_one.current_hp > 0) and (enemy_one.current_hp > 0)):
+        return str(enemy_one.name) + " misses."
+
+
+
+
+def continue_game():
+    global player_dead, right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, text_one, text_two, text_three, text_four, text_five, text_six, text_seven, text_eight, text_nine, text_ten, text_eleven, text_twelve
+    if player_dead == 0:
+        return
+    text_one = " "
+    text_two = " "
+    text_three = " "
+    text_four = " "
+    text_five = " "
+    text_six = " "
+    text_seven = " "
+    text_eight = " "
+    text_nine = " "
+    text_ten = " "
+
+    right_text_one = "The Old God breathes life back into your corpse."
+    right_text_two = " "
+    right_text_three = " "
+    right_text_four = " "
+    right_text_five = " "
+    right_text_six = " "
+    right_text_seven = " "
+    right_text_eight = " "
+    right_text_nine = " "
+    right_text_ten = " "
+    right_text_eleven = " "
+    right_text_twelve = " "
+    right_text_thirteen = " "
+    player_one.current_hp = 10
+    player_one_regen_timer.start()
+    player_dead = 0
+
+
+def travel():
+    global combat_over, right_text_one, right_text_two, right_text_three, right_text_four, right_text_five, right_text_six, right_text_seven, right_text_eight, right_text_nine, right_text_ten, right_text_eleven, right_text_twelve, text_one, text_two, text_three, text_four, text_five, text_six, text_seven, text_eight, text_nine, text_ten, text_eleven, text_twelve
+    combat_over = 0
+
+    text_one = " "
+    text_two = " "
+    text_three = " "
+    text_four = " "
+    text_five = " "
+    text_six = " "
+    text_seven = " "
+    text_eight = " "
+    text_nine = " "
+    text_ten = " "
+
+    right_text_one = ""
+    right_text_two = " "
+    right_text_three = " "
+    right_text_four = " "
+    right_text_five = " "
+    right_text_six = " "
+    right_text_seven = " "
+    right_text_eight = " "
+    right_text_nine = " "
+    right_text_ten = " "
+    right_text_eleven = " "
+    right_text_twelve = " "
+    right_text_thirteen = " "
+
+def ability_one():
+    print " "
+def ability_two():
+    print " "
+def ability_three():
+    print " "
+def use_mana_potion():
+    global player_one, mana_potion
+    if (player_one.current_mana < player_one.max_mana) and (mana_potion > 0):
+        mana_potion -= 1
+        if (player_one.max_mana - player_one.current_mana) < (20 * player_one.level):
+            player_one.current_mana = player_one.max_mana
+        else:
+            player_one.current_mana += (20 * player_one.level)
+
+def use_health_potion():
+    global player_one, health_potion
+    if (player_one.current_hp < player_one.max_hp) and (health_potion > 0):
+        health_potion -= 1
+        if (player_one.max_hp - player_one.current_hp) < (20 * player_one.level):
+            player_one.current_hp = player_one.max_hp
+        else:
+            player_one.current_hp += (20 * player_one.level)
+
+def show_attributes():
+    global attribute
+    if attribute == 0:
+        attribute = 1
+    else:
+        attribute = 0
+
+
+main_frame = simplegui.create_frame("The Land of Pythe", 1000, 600)
+main_frame.add_button("New Game", new_game, 100)
+main_frame.add_button("Travel", travel, 100)
+main_frame.add_button("Equipment", equipped_items_list, 100)
+main_frame.add_button("Inventory", show_inventory, 100)
+main_frame.add_button("Attributes", show_attributes, 100)
+main_frame.add_button("Attack", combat, 100)
+main_frame.add_button("Ability One", ability_three, 100)
+main_frame.add_button("Ability Two", ability_two, 100)
+main_frame.add_button("Ability Three", ability_one, 100)
+main_frame.add_button("Mana Potion", use_mana_potion, 100)
+main_frame.add_button("Health Potion", use_health_potion, 100)
+main_frame.add_button("Continue", continue_game, 100)
+enemy_one_timer = simplegui.create_timer(enemy_one_interval_attack, timer_battle_enemy_one)
+player_one_timer = simplegui.create_timer(player_one_interval_attack, timer_battle_enemy_one)
+player_one_regen_timer = simplegui.create_timer(player_one_regen_interval, player_one_regen_timer)
+enemy_one_regen_timer = simplegui.create_timer(enemy_one_regen_interval, enemy_one_regen_timer)
+main_frame.set_draw_handler(draw_status)
+main_frame.add_input("Enter your commands here:", command, 100)
+background_prologue = simplegui.load_image('https://dl.dropboxusercontent.com/u/14028449/space%203.jpg') # space prologue background
+gold_icon = simplegui.load_image('https://dl.dropboxusercontent.com/u/14028449/I_GoldCoin.png')
+health_potion_icon = simplegui.load_image('https://dl.dropboxusercontent.com/u/14028449/P_Red01.png')
+mana_potion_icon = simplegui.load_image('https://dl.dropboxusercontent.com/u/14028449/P_Blue01.png')
+
+main_frame.start()
